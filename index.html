@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FREE Claude Tokens Generator (SATIRE)</title>
+<style>
+  :root{--bg1:#1a0b2e;--bg2:#0b1a3a;--gold:#ffd23f;--green:#3dff7a;--red:#ff3d5a;--ink:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Comic Sans MS","Chalkboard SE",system-ui,sans-serif;color:var(--ink);
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));min-height:100vh;overflow-x:hidden}
+  .parody{background:repeating-linear-gradient(45deg,#ffd23f,#ffd23f 14px,#111 14px,#111 28px);padding:3px}
+  .parody div{background:#111;color:var(--gold);text-align:center;padding:8px 12px;font:700 13px/1.3 system-ui,sans-serif;letter-spacing:.04em}
+  .ticker{background:var(--red);font:700 14px system-ui;padding:6px 0;overflow:hidden;white-space:nowrap}
+  .ticker span{display:inline-block;padding-left:100%;animation:scroll 22s linear infinite}
+  @keyframes scroll{to{transform:translateX(-100%)}}
+  header{text-align:center;padding:28px 16px 8px}
+  h1{margin:0;font-size:clamp(28px,6vw,54px);text-shadow:0 0 18px var(--gold);animation:pulse 1.2s infinite alternate}
+  @keyframes pulse{to{transform:scale(1.04);color:var(--gold)}}
+  .sub{color:var(--green);font-weight:700;margin-top:6px}
+  .wrap{max-width:860px;margin:0 auto;padding:12px 16px 60px}
+  .card{background:rgba(255,255,255,.07);border:3px dashed var(--gold);border-radius:18px;padding:20px;margin:18px 0}
+  .stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;font:700 15px system-ui}
+  .stats b{color:var(--green);font-size:22px;display:block}
+  .stat{background:#0006;border-radius:12px;padding:10px 16px;text-align:center}
+  label{display:block;font-weight:700;margin:12px 0 6px}
+  input[type=text],input[type=number]{width:100%;padding:12px;border-radius:10px;border:2px solid var(--gold);background:#000a;color:#fff;font-size:16px}
+  .slider{width:100%}
+  .big{font-size:34px;color:var(--gold);text-align:center;margin:4px 0}
+  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:6px}
+  .tier{position:relative;background:#0007;border:3px solid #fff3;border-radius:14px;padding:14px;cursor:pointer;text-align:center;transition:.15s}
+  .tier:hover{transform:translateY(-3px) rotate(-1deg)}
+  .tier.sel{border-color:var(--green);box-shadow:0 0 18px var(--green)}
+  .tier h3{margin:0 0 4px}
+  .tier .was{text-decoration:line-through;color:#ff9aa8;font-size:14px}
+  .tier .now{color:var(--green);font-weight:800;font-size:20px}
+  .tier small{display:block;margin-top:6px;opacity:.8;font-family:system-ui}
+  .badge{position:absolute;top:-11px;right:-8px;background:var(--red);padding:3px 8px;border-radius:10px;font:800 11px system-ui;transform:rotate(8deg)}
+  button.go{width:100%;margin-top:18px;padding:16px;font-size:22px;font-weight:900;border:none;border-radius:14px;cursor:pointer;
+    background:linear-gradient(#52ff8a,#18b94d);color:#012;box-shadow:0 6px 0 #0a7a30;animation:wiggle 1s infinite}
+  button.go:active{transform:translateY(4px);box-shadow:0 2px 0 #0a7a30}
+  @keyframes wiggle{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg)}}
+  .hidden{display:none}
+  .bar{height:26px;background:#000a;border-radius:13px;overflow:hidden;border:2px solid var(--gold)}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),var(--gold));transition:width .4s}
+  .log{font:13px/1.6 ui-monospace,monospace;background:#000b;border-radius:10px;padding:12px;margin-top:12px;min-height:110px;color:var(--green)}
+  .verify .task{display:flex;gap:10px;align-items:center;background:#0007;border-radius:12px;padding:12px;margin:10px 0}
+  .verify .task button{margin-left:auto;padding:8px 14px;border-radius:8px;border:none;font-weight:800;cursor:pointer;background:var(--gold)}
+  .verify .task.done{opacity:.45}
+  .verify .task.done button{background:var(--green)}
+  .fine{font:11px/1.4 system-ui;opacity:.6;margin-top:30px;text-align:center}
+  .reveal h2{color:var(--gold);font-size:30px;text-align:center;margin-top:0}
+  .reveal ul{line-height:1.8;font-family:system-ui}
+  .reveal button{padding:12px 20px;border-radius:10px;border:none;font-weight:800;cursor:pointer;background:var(--gold);margin-top:6px}
+  .confetti{position:fixed;top:-20px;font-size:24px;pointer-events:none;animation:fall 3s linear forwards;z-index:9}
+  @keyframes fall{to{transform:translateY(110vh) rotate(540deg)}}
+</style>
+</head>
+<body>
+<div class="parody"><div>⚠️ SATIRE / PARODY: This is a joke about "free Robux" scam sites. Not affiliated with Anthropic. It generates nothing, collects nothing, and sends nothing anywhere. ⚠️</div></div>
+<div class="ticker"><span>🔥 xX_Gamer_Xx just generated 999,999 Claude Tokens! • 🔥 A guy named Kevin got CLAUDE MAX (he is lying) • 🔥 NO SURVEY!!! (there are three surveys) • 🔥 100% LEGIT TRUSTED (trust me bro) • 🔥</span></div>
+
+<header>
+  <h1>💎 FREE CLAUDE TOKENS GENERATOR 💎</h1>
+  <div class="sub">UNLIMITED • NO HUMAN VERIFICATION* • WORKING OCTOBER 2026 • NOT PATCHED</div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b id="c1">0</b>tokens generated today</div>
+    <div class="stat"><b id="c2">0</b>people online RIGHT NOW</div>
+    <div class="stat"><b>0%</b>chance this works</div>
+  </div>
+
+  <div id="step1" class="card">
+    <label for="nick">Step 1: Enter your totally-not-a-password username</label>
+    <input id="nick" type="text" placeholder="e.g. ClaudeEnjoyer_2009 (not saved anywhere, I promise, it's a joke)" autocomplete="off" maxlength="30">
+
+    <label>Step 2: How many tokens do you want? <span style="opacity:.7">(more = more legit)</span></label>
+    <div class="big"><span id="amt">1,000,000</span> 🪙</div>
+    <input class="slider" id="slider" type="range" min="1" max="100" value="50">
+    <div style="font:12px system-ui;opacity:.7;text-align:center">Max: 999,999,999,999,999 (the number is made up, like all the numbers here)</div>
+
+    <label>Step 3: Pick your FREE plan 🎁</label>
+    <div class="tiers" id="tiers">
+      <div class="tier" data-t="Claude Free"><h3>Claude Free</h3><div class="was">$0</div><div class="now">FREE!!</div><small>The one that is already free. Wow.</small></div>
+      <div class="tier sel" data-t="Claude Pro"><span class="badge">HOT</span><h3>Claude Pro</h3><div class="was">$20/mo</div><div class="now">FREE!!</div><small>For people who say "one more prompt" 40 times a day</small></div>
+      <div class="tier" data-t="Claude Max"><span class="badge">BEST</span><h3>Claude Max</h3><div class="was">$100+/mo</div><div class="now">FREE!!</div><small>Infinite vibes. Legally unavailable from this website.</small></div>
+      <div class="tier" data-t="Claude Max 20x ULTRA GOD"><span class="badge">RARE</span><h3>Max 20x GOD MODE</h3><div class="was">$200/mo</div><div class="now">FREE!!</div><small>Does not exist. Neither does the generator.</small></div>
+    </div>
+
+    <button class="go" id="go">⚡ GENERATE NOW ⚡</button>
+  </div>
+
+  <div id="step2" class="card hidden">
+    <h2 style="margin-top:0">Generating... please wait 🕐</h2>
+    <div class="bar"><i id="fill"></i></div>
+    <div class="log" id="log"></div>
+  </div>
+
+  <div id="step3" class="card verify hidden">
+    <h2 style="margin-top:0;color:var(--red)">🤖 HUMAN VERIFICATION REQUIRED</h2>
+    <p style="font-family:system-ui">To prove you're not a bot, complete <b>1</b> quick task. (It's 3. It was always going to be 3.)</p>
+    <div class="task"><span>📱 Download 'Cat Merge Saga: Mega Edition' and reach level 47</span><button>START</button></div>
+    <div class="task"><span>📧 Enter your email to win a free "iPhone 17" (not real)</span><button>START</button></div>
+    <div class="task"><span>🎮 Watch an ad for a game that is just a different ad</span><button>START</button></div>
+    <p id="vmsg" style="font:13px system-ui;opacity:.7"></p>
+  </div>
+
+  <div id="step4" class="card reveal hidden">
+    <h2>🎉 CONGRATULATIONS! You got scammed... by nobody! 🎉</h2>
+    <p style="text-align:center;font-family:system-ui">Good news: this was a parody, so nothing happened and nothing was taken.<br>Bad news: <b id="plan">Claude Pro</b> is still not free.</p>
+    <ul>
+      <li>🚩 Real accounts or plans <b>cannot</b> be "generated" by a website. Ever.</li>
+      <li>🚩 "Just enter your username/password/email" is how accounts get stolen.</li>
+      <li>🚩 "Complete one quick survey" is never one quick survey.</li>
+      <li>🚩 If it sounds too good to be true, it has a countdown timer next to it.</li>
+      <li>✅ Get plans only from the official site, and turn on two-factor authentication.</li>
+    </ul>
+    <button id="again">Try again (it will not work)</button>
+  </div>
+
+  <div class="fine">Claude Tokens Generator is a work of parody. No tokens, plans, or Robux were harmed. Terms: you agree that I am a joke. Not affiliated with, endorsed by, or sponsored by Anthropic or Roblox. "Working October 2026" is also a lie.</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const fmt=n=>n.toLocaleString("en-US");
+// fake ever-growing counters
+let c1=4817233,c2=1337;
+setInterval(()=>{c1+=Math.floor(Math.random()*900);c2=Math.max(900,c2+Math.floor(Math.random()*41)-20);$("c1").textContent=fmt(c1);$("c2").textContent=fmt(c2)},700);
+$("c1").textContent=fmt(c1);$("c2").textContent=fmt(c2);
+
+function sliderVal(){return Math.round(Math.pow(1.25,+$("slider").value)*1000)}
+$("slider").oninput=()=>{$("amt").textContent=fmt(sliderVal())};
+$("amt").textContent=fmt(sliderVal());
+
+let plan="Claude Pro";
+document.querySelectorAll(".tier").forEach(t=>t.onclick=()=>{
+  document.querySelectorAll(".tier").forEach(x=>x.classList.remove("sel"));
+  t.classList.add("sel");plan=t.dataset.t;
+});
+
+const lines=[
+ "Connecting to Claude mainframe...",
+ "Bypassing Anthropic firewall (it's just a div)...",
+ "Hacking the tokens (using the F12 key)...",
+ "Downloading more RAM...",
+ "Asking Claude nicely...",
+  "Claude said no...",
+ "Asking Claude again, but sadder...",
+ "Injecting 1,000,000 tokens into thin air...",
+ "Encrypting your username with ROT0...",
+ "Consulting a guy named Kevin...",
+ "ERROR: Too many people are being this cool. Retrying...",
+ "Almost done (said 4 times already)..."
+];
+$("go").onclick=()=>{
+  $("step1").classList.add("hidden");$("step2").classList.remove("hidden");
+  const log=$("log");log.textContent="";
+  let i=0;
+  const iv=setInterval(()=>{
+    log.textContent+="> "+lines[i]+"\n";log.scrollTop=log.scrollHeight;
+    $("fill").style.width=Math.min(97,(++i/lines.length)*97)+"%";
+    if(i>=lines.length){clearInterval(iv);setTimeout(()=>{$("step2").classList.add("hidden");$("step3").classList.remove("hidden")},700)}
+  },650);
+};
+
+const vmsgs=["Verifying... (the cat game is loading)","Please wait, the ad is 31 minutes long","Almost there! Just 2 more tasks!","Task 3 unlocked: tell 10 friends (they will block you)"];
+document.querySelectorAll(".task button").forEach((b,i)=>b.onclick=()=>{
+  b.parentElement.classList.add("done");b.textContent="✔";
+  $("vmsg").textContent=vmsgs[Math.min(i+1,3)];
+  if(document.querySelectorAll(".task.done").length===3){
+    $("plan").textContent=plan;
+    setTimeout(()=>{$("step3").classList.add("hidden");$("step4").classList.remove("hidden");boom()},900);
+  }
+});
+function boom(){
+  for(let i=0;i<40;i++){
+    const s=document.createElement("div");s.className="confetti";
+    s.textContent=["🪙","🎉","🚩","💎"][i%4];
+    s.style.left=Math.random()*100+"vw";s.style.animationDelay=Math.random()*1.5+"s";
+    document.body.appendChild(s);setTimeout(()=>s.remove(),5000);
+  }
+}
+$("again").onclick=()=>{
+  document.querySelectorAll(".task").forEach(t=>{t.classList.remove("done");t.querySelector("button").textContent="START"});
+  $("vmsg").textContent="";$("fill").style.width="0";
+  $("step4").classList.add("hidden");$("step1").classList.remove("hidden");
+};
+</script>
+</body>
+</html>
